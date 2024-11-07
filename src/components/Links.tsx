@@ -2,7 +2,7 @@ import Image from "next/image";
 
 // Link to repository
 const repositoryLink = {
-  href: "https://github.com/Particle-Network/scroll-aa-connect",
+  href: "https://github.com/Particle-Network/sei-aa-connect",
   imgSrc: "https://static.particle.network/mintlify/snippets/logos/github.png",
   imgAlt: "GitHub Logo",
   text: "Check the repository",
@@ -38,14 +38,14 @@ const links = [
     description: "The L1 unifying all chains through Universal Accounts.",
   },
   {
-    href: "https://docs.scroll.io/en/home",
-    title: "Scroll Documentation →",
-    description: "Scroll is a security-focused scaling solution for Ethereum.",
+    href: "https://www.docs.sei.io/",
+    title: "Sei Documentation →",
+    description: "Sei is the first parallelized EVM.",
   },
   {
-    href: "https://docs.scroll.io/en/user-guide/faucet/",
-    title: "Scroll Faucet →",
-    description: "Get Sepolia ETH and bridge to Scroll.",
+    href: "https://www.docs.sei.io/dev-ecosystem-providers/faucets",
+    title: "Sei Faucet →",
+    description: "Get Sei tokens.",
   },
 ];
 

@@ -7,9 +7,9 @@
   </h3>
 </div>
 
-# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Scroll Chain
+# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Sei Chain
 
-⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Scroll Chain](https://scroll.io/)
+⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Sei Chain](https://sei.io/)
 
 > Note that Account Abstraction is included wihint the new `connectkit` package. `@particle-network/aa` is required when using an EIP 1193 provider like ehter.js.
 > This demo showcases both options.
@@ -62,10 +62,9 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 👉 Learn more about the [Particle AA SDK](https://developers.particle.network/docs/aa-web-quickstart).
 
-## What is Scroll
+## What is Sei
 
-Scroll is an Ethereum Layer 2 scaling solution that aims to reduce transaction costs and improve scalability without sacrificing security.
-By using cutting-edge research in zero-knowledge (zk) proofs, Scroll introduces a zkEVM (Zero-Knowledge Ethereum Virtual Machine) that mirrors Ethereum's functionality on a more efficient Layer 2 network. This means that all activities on Scroll behave just like they do on Ethereum but with enhanced performance and lower costs.
+Sei is a high-performance blockchain that optimizes the Ethereum ecosystem, achieving faster speeds and lower costs. By introducing innovations like Twin Turbo Consensus, Optimistic Parallelization, and an Interoperable EVM, Sei enables Ethereum-based applications to run with 100x improved performance, reaching over 5,000 transactions per second and 400ms finality.
 
 ***
 
@@ -75,7 +74,7 @@ By using cutting-edge research in zero-knowledge (zk) proofs, Scroll introduces 
 
 ### Clone this repository
 ```
-git clone https://github.com/Particle-Network/scroll-aa-connect
+git clone https://github.com/Particle-Network/sei-aa-connect
 ```
 
 ### Install dependencies
