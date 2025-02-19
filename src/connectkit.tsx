@@ -6,7 +6,58 @@ import { authWalletConnectors } from "@particle-network/connectkit/auth";
 import { evmWalletConnectors } from "@particle-network/connectkit/evm";
 import { EntryPosition, wallet } from "@particle-network/connectkit/wallet";
 import { aa } from "@particle-network/connectkit/aa";
-import { sei, seiTestnet } from "@particle-network/connectkit/chains";
+import { defineChain } from "@particle-network/connectkit/chains";
+
+// Define HashKey chains
+const hashkeyTestnet = defineChain({
+  id: 133,
+  name: "HashKey Testnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "HSK",
+    symbol: "HSK",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://hashkeychain-testnet.alt.technology"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "Explorer",
+      url: "https://hashkeychain-testnet-explorer.alt.technology",
+    },
+  },
+  testnet: true,
+  // custom: {
+  //     icon: 'https://...', // TODO: add icon
+  // },
+});
+
+const hashkeyMainnet = defineChain({
+  id: 177,
+  name: "HashKey Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "HSK",
+    symbol: "HSK",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://mainnet.hsk.xyz"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "Explorer",
+      url: "https://explorer.hsk.xyz",
+    },
+  },
+  testnet: false,
+  // custom: {
+  //     icon: 'https://...', // TODO: add icon
+  // },
+});
 
 const config = createConfig({
   projectId: process.env.NEXT_PUBLIC_PROJECT_ID!,
@@ -38,7 +89,7 @@ const config = createConfig({
     // aa config end
   ],
 
-  chains: [sei, seiTestnet],
+  chains: [hashkeyMainnet, hashkeyTestnet],
 });
 
 export const ParticleConnectkit = ({ children }: React.PropsWithChildren) => {

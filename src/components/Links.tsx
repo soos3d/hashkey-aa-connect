@@ -2,7 +2,7 @@ import Image from "next/image";
 
 // Link to repository
 const repositoryLink = {
-  href: "https://github.com/Particle-Network/sei-aa-connect",
+  href: "https://github.com/Particle-Network/hashkey-aa-connect",
   imgSrc: "https://static.particle.network/mintlify/snippets/logos/github.png",
   imgAlt: "GitHub Logo",
   text: "Check the repository",
@@ -38,14 +38,14 @@ const links = [
     description: "The L1 unifying all chains through Universal Accounts.",
   },
   {
-    href: "https://www.docs.sei.io/",
-    title: "Sei Documentation →",
-    description: "Sei is the first parallelized EVM.",
+    href: "https://docs.hsk.xyz/",
+    title: "HaskKey Documentation →",
+    description: "The L2 for RWAs",
   },
   {
-    href: "https://www.docs.sei.io/dev-ecosystem-providers/faucets",
-    title: "Sei Faucet →",
-    description: "Get Sei tokens.",
+    href: "https://faucet.hsk.xyz/faucet",
+    title: "HashKey Faucet →",
+    description: "Get HSK tokens.",
   },
 ];
 

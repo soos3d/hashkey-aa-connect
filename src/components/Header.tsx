@@ -15,14 +15,14 @@ const Header: React.FC = () => {
     particleImageAlt: "Particle Logo",
     particleImageWidth: 240,
     particleImageHeight: 24,
-    secondaryLinkHref: "https://www.sei.io/",
-    secondaryImageSrc: "/sei.png",
-    secondaryImageAlt: "Sei Logo",
-    secondaryImageWidth: 150,
-    secondaryImageHeight: 150,
+    secondaryLinkHref: "https://group.hashkey.com/en/hsk",
+    secondaryImageSrc: "/logo.png",
+    secondaryImageAlt: "HaskKey Logo",
+    secondaryImageWidth: 70,
+    secondaryImageHeight: 70,
   };
 
-  const subHeading = "Particle Connect + Sei Chain demo.";
+  const subHeading = "Particle Connect + HashKey Chain demo.";
 
   return (
     <>

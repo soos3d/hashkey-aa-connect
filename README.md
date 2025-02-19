@@ -7,11 +7,11 @@
   </h3>
 </div>
 
-# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Sei Chain
+# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the HashKey Chain
 
-⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Sei Chain](https://sei.io/)
+⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [HashKey Chain](https://group.hashkey.com/en/hsk).
 
-> Note that Account Abstraction is included wihint the new `connectkit` package. `@particle-network/aa` is required when using an EIP 1193 provider like ehter.js.
+> Note that Account Abstraction is included wihint the new `connectkit` package. `@particle-network/aa` is required when using an EIP 1193 provider like ether.js.
 > This demo showcases both options.
 
 This app allows you to log in using social logins and interact with various testnets by displaying account information and sending a gasless transfer transaction to an address you can input in the UI.
@@ -50,7 +50,7 @@ Plus:
 
 **Particle Connect** enables a unified modal driving connection with social logins (through Particle Auth) and standard Web3 wallets, creating an equally accessible experience for Web3 natives and traditional consumers. Particle Connect is an all-in-one SDK capable of handling end-to-end onboarding and wallet connection.
 
-This app enables you to log in using social logins or Web3 methods via Particle Connect and interact with the Ethereum Sepolia, Base Sepolia, and Avalanche Fuji testnets. You can view your account information and send transfer transactions to any address you input in the UI.
+This app enables you to log in using social logins or Web3 methods via Particle Connect and interact with the HashKey mainnet and testnet. You can view your account information and send transfer transactions to any address you input in the UI.
 
 👉 Learn more about [Particle Connect](https://developers.particle.network/api-reference/connect/desktop/web).
 
@@ -62,9 +62,9 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 👉 Learn more about the [Particle AA SDK](https://developers.particle.network/docs/aa-web-quickstart).
 
-## What is Sei
+## What is HashKey
 
-Sei is a high-performance blockchain that optimizes the Ethereum ecosystem, achieving faster speeds and lower costs. By introducing innovations like Twin Turbo Consensus, Optimistic Parallelization, and an Interoperable EVM, Sei enables Ethereum-based applications to run with 100x improved performance, reaching over 5,000 transactions per second and 400ms finality.
+HashKey Chain is an Ethereum Layer-2 network built by HashKey Group, designed for scalability, low-cost transactions, and developer-friendly deployment. Leveraging zero-knowledge (ZK) technology enhances transaction efficiency while maintaining security and compliance. The chain integrates with the HSK token to incentivize ecosystem contributors and supports high-speed transactions at minimal gas costs.
 
 ***
 
@@ -74,7 +74,7 @@ Sei is a high-performance blockchain that optimizes the Ethereum ecosystem, achi
 
 ### Clone this repository
 ```
-git clone https://github.com/Particle-Network/sei-aa-connect
+git clone https://github.com/Particle-Network/hashkey-aa-connect
 ```
 
 ### Install dependencies
@@ -144,33 +144,6 @@ plugins: [
   }),
 ],
 ```
-
-#### Available Smart Accounts
-
-Here is a list of supported smart accounts and their corresponding versions and chain IDs:
-
-- **`BICONOMY`**: A [Biconomy Smart Account](https://www.biconomy.io/smart-accounts).
-  - **Versions**: `1.0.0`, `2.0.0`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-- **`CYBERCONNECT`**: A [CyberConnect Smart Account](https://wallet.cyber.co/).
-  - **Version**: `1.0.0`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-- **`SIMPLE`**: A [SimpleAccount Implementation](https://github.com/eth-infinitism/account-abstraction/blob/develop/contracts/samples/SimpleAccount.sol).
-  - **Versions**: `1.0.0`, `2.0.0`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-- **`LIGHT`**: A [Light Account Implementation by Alchemy](https://github.com/alchemyplatform/light-account).
-  - **Version**: `1.0.2`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-- **`XTERIO`**: A [Xterio Smart Account](https://xter.io/build).
-  - **Version**: `1.0.0`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-> Check the [Particle AA Docs](https://developers.particle.network/api-reference/aa/sdks/desktop/web#initialization) to verify up to date information.
-
 #### Sending AA Transactions
 
 You can send gasless transactions using the native `smartAccount` instance provided by Particle Connect. 
